@@ -10,3 +10,9 @@
 -- 2
 -- Prelude> elementAt "haskell" 5
 -- 'e'
+
+elementAt0 :: [a] -> Int -> a
+elementAt0 xs i = head (drop (i - 1) xs)
+
+elementAt1 :: [a] -> Int -> a
+elementAt1 xs i = xs !! (i - 1)
